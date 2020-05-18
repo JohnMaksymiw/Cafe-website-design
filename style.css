@@ -1,0 +1,454 @@
+body,html{
+
+	height:100%;
+	width: 100%;
+	padding:0;
+	margin:0;
+	position:relative;
+
+}
+
+@font-face {
+  font-family: my_web_font;
+  src: url(font/LemonMilk.woff);
+
+}
+
+  @font-face{
+  font-family: my_web_font2;
+  src: url(font/LotusEaterRegular.woff);
+
+}
+
+.image-collection{
+
+	height:100%;
+	width: 100%;
+	position:absolute;
+	z-index: 5;
+
+}
+
+.image-collection div {
+
+	position:absolute;
+	width:100%;
+	height:100%;
+	
+
+}
+
+.image{
+	
+	width:100%;
+	height:100%;
+
+}
+
+#image-1{
+
+
+	z-index:3;
+	display:none;
+
+}
+
+#image-2{
+
+	z-index:3;
+	display:none;
+
+}
+
+.header{
+
+	position:fixed;
+	z-index: 10;
+	width:100%;
+	padding:2vw;
+
+}
+
+.header-containment-wrapper{
+
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width:100%;
+	z-index: 9;
+	height:8vw;
+	position:relative;
+
+}
+
+.header-title{
+
+	grid-column: 1/3;
+	display:grid;
+	grid-template-rows:1fr 1fr;
+	font-family: my_web_font;
+	color:white;
+	position:relative;
+
+}
+
+.link-default{
+
+	color: white;
+	text-decoration: none;
+
+}
+
+.header-main-title{
+
+	grid-row: 1/2
+	color:white;
+	font-size: 4vw;
+}
+
+.menu{
+
+	color:black;
+
+}
+
+.header-tagline{
+
+	grid-row:2/3;
+	color:white;
+	font-size:1vw;
+	position:absolute;
+	left:14%;
+
+}
+
+.header-menu{
+
+	grid-column: 3/6
+
+}
+
+.header-menu-list{
+
+	list-style-type: none;
+	text-decoration-style: none;
+	padding:0;
+	margin:0;
+	font-family: my_web_font2;
+	color:white;
+	position:absolute;
+	font-size: 2vw;
+	top:8%;
+
+}
+
+.header-menu-list li{
+
+	display:inline-block;
+	padding:1.5vw;
+	text-decoration-style: none;
+	text-decoration: none;
+	color:white;
+
+}
+
+.header-menu-list a{
+
+	text-decoration-style: none;
+	text-decoration: none;
+
+}
+
+.first{
+
+	color:orange;
+
+}
+
+.first:visited{
+
+	color:orange;
+
+}
+
+.second{
+
+	color:white;
+
+}
+
+.second:visited{
+
+	color:white;
+
+}
+
+.second:hover{
+
+	color:orange;
+	transition:0.25s;
+
+}
+
+.brand-collection{
+
+	grid-column: 8/9;
+	position:absolute;
+	top:30%;
+
+}
+
+.brand-collection div{
+
+	display:inline-block;
+
+}
+
+.brand{
+
+	height:1.5vw;
+	width:1.5vw;
+
+}
+
+.navigation-menu{
+
+	position:absolute;
+	z-index: 11;
+	top:34%;
+	right:31.5%;
+	text-align: center;
+	align-content: center;
+	font-family:my_web_font;
+	color:white;
+	text-decoration-style: none;
+	display:inline-block;
+
+}
+
+.navigation-menu-list li{
+
+	display:inline-block;
+	font-size:6vw;
+	padding:4vw;
+
+}
+
+.navigation-icon:hover{
+
+	filter:blur(2px);
+	text-decoration:underline;
+
+}
+
+.navigation-icon{
+
+	color:white;
+	text-decoration: none;
+
+}
+
+.navigation-icon:visited{
+
+	color:white;
+	text-decoration: none;
+
+}
+
+#menu_header{
+
+	position:fixed;
+	z-index: 10;
+	width:100%;
+	padding:2vw;
+
+}
+
+
+.menu_header-containment-wrapper{
+
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	width:100%;
+	z-index: 9;
+	height:8vw;
+	position:relative;
+
+}
+
+.menu_link-default{
+
+	color: black;
+	text-decoration: none;
+
+}
+
+.menu_header-title{
+
+	grid-column: 1/3;
+	display:grid;
+	grid-template-rows:1fr 1fr;
+	font-family: my_web_font;
+	color:black;
+	position:relative;
+
+}
+
+.menu_header-main-title{
+
+	grid-row: 1/2
+	color:black;
+	font-size: 4vw;
+}
+
+.menu_header-tagline{
+
+	grid-row:2/3;
+	color:black;
+	font-size:1vw;
+	position:absolute;
+	left:14%;
+
+}
+
+.menu_header-menu{
+
+	grid-column: 3/6
+
+}
+
+.menu_header-menu-list{
+
+	list-style-type: none;
+	text-decoration-style: none;
+	padding:0;
+	margin:0;
+	font-family: my_web_font2;
+	
+	position:absolute;
+	font-size: 2vw;
+	top:8%;
+
+}
+
+.menu_header-menu-list li{
+
+	display:inline-block;
+	padding:1.5vw;
+	text-decoration-style: none;
+	text-decoration: none;
+
+
+}
+
+.menu_header-menu-list a{
+
+	text-decoration-style: none;
+	text-decoration: none;
+}
+
+.menu_first{
+
+	color:orange;
+
+}
+
+.menu_first:visited{
+
+	color:orange;
+
+}
+
+.menu_second{
+
+	color:black;
+
+}
+
+.menu_second:visited{
+
+	color:black;
+
+}
+
+.menu_second:hover{
+
+	color:orange;
+	transition:0.25s;
+
+}
+
+.menu_brand-collection{
+
+	grid-column: 8/9;
+	position:absolute;
+	top:30%;
+
+}
+
+.menu_brand-collection div{
+
+	display:inline-block;
+
+}
+
+.menu_brand{
+
+	height:1.5vw;
+	width:1.5vw;
+
+}
+
+.menu_main-wrapper{
+
+	padding:15vw;
+
+}
+
+.menu_heading-wrapper{
+
+	
+	text-align: center;
+	font-size: 10vw;
+	font-family:my_web_font2;
+	padding:4vw;
+	border-top: 0.1vw solid gainsboro;
+	border-bottom:0.1vw solid gainsboro;
+
+}
+
+.menu_breakfast-image{
+
+	height:28.2vw;
+	
+
+}
+
+.menu_header-gap{
+
+	height:4vw;
+}
+
+.maps_heading-wrapper{
+
+	font-size:2vw;
+	font-family:my_web_font2;
+
+}
+
+.maps_main-wrapper{
+
+	padding-top:20vw;
+	padding-left:40vw;
+	padding-right:40vw;
+	text-align: center;
+	word-wrap: break-word;
+
+}
+
+
+
+
+
+
+
+
